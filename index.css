@@ -15,19 +15,24 @@ p {
 	padding: 15px;
 }
 
-.container, .container2, .container3 {	
-	width: 300px;
+.container, .container2, .container3 {
 	background-color: silver;
 	border: 1.5px black solid;
 
 }
-
-.container {
+.container3{
+	width: 31.32%;
+	margin-right: 5px;
+}
+.container2{
+	width: 31.32%;
+	margin-right: 5px;
+}
+.container{
+	width: 31.32%;
 	margin-left: 20px;
 	margin-right: 20px;
 }
-
-	
 
 .sushi,.chicken,.beef {
 	font-family: cursive;
@@ -59,21 +64,21 @@ p {
 }
 
 /*******************for large devices**************/
-@media (min-width: 992px){
+@media (min-width: 992px) and (max-width: 2040px){
 	.container3{
 		width: 31.32%;
 		float: right;
-		margin-right: 20px;
+		margin-right: 3px;
 }
 	.container2{
 		float: left;
 		width: 31.32%;
 		margin-right: -5px;
-		padding-bottom: 20px;
+		
 	}
 	.container{
 		float: left;
-		width: 31.32;
+		width: 31.32%;
 	}
 	
 	}
@@ -101,7 +106,7 @@ p {
 /***************************************************/
 
 /*****************for small devices****************/
-@media (max-width: 767px) and (min-width: 1px) {
+@media (max-width: 767px){
 	.container, .container2, .container3{
 		width: 100%;
 		margin:1px;
